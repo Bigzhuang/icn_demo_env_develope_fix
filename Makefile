@@ -24,6 +24,7 @@ install: package_prerequisite \
 	bpa_rest_api_install
 
 package_prerequisite:
+	bash time_reset.sh &&\
 	 pushd $(BMDIR) && ./01_install_package.sh && popd
 
 bmh_preinstall:
